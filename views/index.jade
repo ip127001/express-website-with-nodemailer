@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title JADE-Bootstrap
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+    // link(rel="stylesheet",href="css/bootstrap.min.css")
+    // Custom styles for this template
+    link(href='stylesheets/style.css', rel='stylesheet')
+  body(data-spy='scroll', data-target='.scrollspy')
+    .container
+      // Static navbar
+      nav.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#') Project name
+          #navbar.navbar-collapse.collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='#') Home
+              li
+                a(href='/about') About
+              li
+                a(href='/contact') Contact
+      // Main component for a primary marketing message or call to action
+      .jumbotron
+        h1 Express Example
+        p
+          | This example is quick exercise to start a website using express and send a mail using nodemailer
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')

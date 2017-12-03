@@ -1,0 +1,5 @@
+{
+    "name": "Node.js getting started",
+    "description": "a auth app using nodejs",
+    "keywords": ["node", "express"]
+}
