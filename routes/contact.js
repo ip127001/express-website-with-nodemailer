@@ -13,14 +13,14 @@ router.post('/send', function(req, res,next){
 	var transporter = nodemailer.createTransport({
 		service: 'Gmail',
 		auth: {
-			user: 'geekrk.01@gmail.com',
-			pass: 'ip127001@2018'
+			user: 'your-email-id',
+			pass: 'email-id password'
 		}
 	});
 
 	var mailOptions = {
-		from: 'Rohit kumawat <rkumawat1761996@gmail.com>  ',
-		to: 'geekrk.01@gmail.com',
+		from: 'Your Name <other users email>  ',
+		to: 'your-email-id',
 		subject: 'address is here',
 		text: 'new address is jaipur from user.....Name: '+req.body.name+ ' Email: '+req.body.email + 'Message: '+ req.body.message
 	};        
